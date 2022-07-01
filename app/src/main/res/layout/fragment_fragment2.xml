@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment2"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#0089CF">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14ssp"
+            android:hint="버스번호"
+            android:id="@+id/routeId"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:padding="@dimen/_6sdp"
+            android:layout_margin="@dimen/_4sdp"
+            android:background="@drawable/edit_design"
+            android:textColor="@color/black"
+            ></EditText>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView"
+            ></androidx.recyclerview.widget.RecyclerView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Btn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_14sdp"
+            android:elevation="@dimen/_8sdp"
+            android:src="@drawable/ic_baseline_fsearch_24"
+            android:backgroundTint="@color/white"
+            ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </RelativeLayout>
+
+</LinearLayout>

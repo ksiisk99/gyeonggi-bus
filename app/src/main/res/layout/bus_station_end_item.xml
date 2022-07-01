@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:id="@+id/constraint"
+        >
+        <View
+            android:layout_width="@dimen/_4sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="#D4D2D2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/_34sdp"
+            ></View>
+        <ImageView
+            android:layout_width="@dimen/_21sdp"
+            android:layout_height="@dimen/_21sdp"
+            android:background="@drawable/station_item_bg"
+            android:src="@drawable/ic_baseline_adjust_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/center"
+            android:layout_marginStart="@dimen/_34sdp"
+            ></ImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_70sdp"
+        android:paddingStart="@dimen/_2sdp"
+        android:id="@+id/stationName"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="#46000000"
+        android:text="삼산초등학교"
+        android:gravity="center_vertical"
+        android:layout_weight="8"
+        android:background="@drawable/station_list_bg"
+        ></TextView>
+
+</LinearLayout>
